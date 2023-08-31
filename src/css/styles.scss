@@ -1,21 +1,105 @@
+$color1: #ff5800;
+$color2: black;
+$color3: #9f956c;
+$color4: #cbbf7a;
+$color5: #f4e87c;
+
+$fonth1: 'Roboto', sans-serif;
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-nav {
-    height: 20vh;
-    width: 100%;
-    background-color: blue;
+.logo {
+    // background-color: red;
+    display: flex;
+    height: 10vh;
 }
+.contacto {
+    display: flex;
+    height: 7vh;
+}
+
 header {
-    height: 80vh;
+    height: 15vh;
     width: 100%;
-    background-color: green;
+    background-color: $color2;
+
+    display: flex;
+    position: sticky;
+    top: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: $fonth1;
+
+    a {
+        margin: 0 3vh;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            li {
+                border-radius: 10px;
+                &:hover {
+                    background-color: rgba(42, 42, 42, 0.203);
+                }
+            }
+            a {
+                display: flex;
+                padding: 20px 20px;
+
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+#banner {
+    height: 85vh;
+    width: 100%;
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+    #banner-text {
+        width: 50%;
+        height: 70%;
+        background-color: white;
+        margin-right: 5%;
+        font-family: $fonth1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 2%;
+
+        // Glass effect
+        h1 {
+            font-size: 48px;
+            margin-bottom: 10%;
+        }
+        p {
+            font-size: 28px;
+            margin: 0 7%;
+        }
+    }
 }
 section {
     height: 100vh;
     width: 100%;
     background-color: yellow;
     border: 1px solid black;
+    scroll-margin-top: 15vh;
 }

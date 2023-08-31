@@ -4,16 +4,82 @@
   box-sizing: border-box;
 }
 
-nav {
-  height: 20vh;
-  width: 100%;
-  background-color: blue;
+.logo {
+  display: flex;
+  height: 10vh;
+}
+
+.contacto {
+  display: flex;
+  height: 7vh;
 }
 
 header {
-  height: 80vh;
+  height: 15vh;
   width: 100%;
-  background-color: green;
+  background-color: black;
+  display: flex;
+  position: sticky;
+  top: 0;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+}
+header a {
+  margin: 0 3vh;
+}
+header nav {
+  display: flex;
+  align-items: center;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+header nav ul li {
+  border-radius: 10px;
+}
+header nav ul li:hover {
+  background-color: rgba(42, 42, 42, 0.203);
+}
+header nav ul a {
+  display: flex;
+  padding: 20px 20px;
+  color: white;
+  text-decoration: none;
+}
+
+#banner {
+  height: 85vh;
+  width: 100%;
+  background-image: url(../img/banner.jpg);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+#banner #banner-text {
+  width: 50%;
+  height: 70%;
+  background-color: white;
+  margin-right: 5%;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2%;
+}
+#banner #banner-text h1 {
+  font-size: 48px;
+  margin-bottom: 10%;
+}
+#banner #banner-text p {
+  font-size: 28px;
+  margin: 0 7%;
 }
 
 section {
@@ -21,4 +87,5 @@ section {
   width: 100%;
   background-color: yellow;
   border: 1px solid black;
+  scroll-margin-top: 15vh;
 }/*# sourceMappingURL=styles.css.map */
