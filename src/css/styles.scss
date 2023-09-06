@@ -3,13 +3,16 @@
 $color-principal: #fd7e14;
 $color-principal-hover: hsla(21, 100%, 50%, 0.801);
 $color-negro: black;
-$color3: #9f956c;
-$color4: #cbbf7a;
+$color-blanco: white;
+// $color3: #9f956c;
+// $color4: #cbbf7a;
 $color5: #f4e87c;
 
 // Fuentes
 $font-estandar: 'Roboto', sans-serif;
 $font-radio: 'Bebas Neue', sans-serif;
+$font-titulos: 'Archivo Black', sans-serif;
+$font-cuerpos: 'Figtree', sans-serif;
 $font-size: 16px;
 // #endregion variables
 
@@ -72,37 +75,47 @@ header {
 
 // #region banner
 #banner {
-    height: 85vh;
-    width: 100%;
+    height: 88vh;
     background-image: url(../img/banner.jpg);
     background-size: cover;
+    background-position: center;
 
     display: flex;
     align-items: center;
     justify-content: end;
 
     #banner-text {
-        width: 50%;
-        height: 70%;
-        background-color: white;
+        width: 30%;
+        height: 60%;
         margin-right: 5%;
-        font-family: $font-estandar;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        padding: 2%;
 
-        // Glass effect
+        // display: flex;
+        // flex-direction: column;
+        // align-items: center;
+        // justify-content: center;
+        // text-align: center;
+        padding: 2.5rem;
+        color: $color-blanco;
+        text-shadow: 0.125rem 0.125rem 0.3125rem $color-principal;
+
         h1 {
-            font-size: 48px;
-            margin-bottom: 10%;
+            font-size: 3rem;
+            font-family: $font-titulos;
+            margin-bottom: 3rem;
         }
         p {
-            font-size: 28px;
-            margin: 0 7%;
+            height: auto;
+            font-size: 2rem;
+            font-family: $font-cuerpos;
         }
+
+        // Glass effect
+        /* From https://css.glass */
+        background: rgba(0, 0, 0, 0.34);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(4.5px);
+        -webkit-backdrop-filter: blur(4.5px);
     }
 }
 
