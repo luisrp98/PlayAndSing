@@ -1,67 +1,76 @@
-$color1: #ff5800;
-$color2: black;
+// #region variables
+// Colores
+$color-principal: #fd7e14;
+$color-principal-hover: hsla(21, 100%, 50%, 0.801);
+$color-negro: black;
 $color3: #9f956c;
 $color4: #cbbf7a;
 $color5: #f4e87c;
 
-$fonth1: 'Roboto', sans-serif;
+// Fuentes
+$font-estandar: 'Roboto', sans-serif;
+$font-radio: 'Bebas Neue', sans-serif;
+$font-size: 16px;
+// #endregion variables
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
-.logo {
-    // background-color: red;
-    display: flex;
-    height: 10vh;
-}
-.contacto {
-    display: flex;
-    height: 7vh;
+    font-size: $font-size;
+    font-family: $font-estandar;
+    scroll-behavior: smooth;
 }
 
+// #region navbar
 header {
-    height: 15vh;
-    width: 100%;
-    background-color: $color2;
-
+    height: 12vh;
+    background-color: $color-negro;
     display: flex;
     position: sticky;
     top: 0;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    font-family: $fonth1;
 
-    a {
-        margin: 0 3vh;
+    .logo,
+    .contacto {
+        display: flex;
+        padding: 0 2vw;
+
+        &.logo {
+            height: 12vh;
+        }
+        &.contacto {
+            height: 8vh;
+        }
     }
 
     nav {
-        display: flex;
-        align-items: center;
-
         ul {
             list-style: none;
             display: flex;
             justify-content: space-between;
-            li {
-                border-radius: 10px;
-                &:hover {
-                    background-color: rgba(42, 42, 42, 0.203);
-                }
-            }
+
             a {
                 display: flex;
-                padding: 20px 20px;
-
-                color: white;
                 text-decoration: none;
+                font-family: $font-radio;
+                font-size: 2rem;
+                color: white;
+
+                padding: 1.8rem;
+                border-radius: 1rem;
+
+                &:hover {
+                    background-color: $color-principal-hover;
+                }
             }
         }
     }
 }
+// #endregion navbar
 
+// #region banner
 #banner {
     height: 85vh;
     width: 100%;
@@ -77,7 +86,7 @@ header {
         height: 70%;
         background-color: white;
         margin-right: 5%;
-        font-family: $fonth1;
+        font-family: $font-estandar;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -96,6 +105,9 @@ header {
         }
     }
 }
+
+// #endregion banner
+
 section {
     height: 100vh;
     width: 100%;
