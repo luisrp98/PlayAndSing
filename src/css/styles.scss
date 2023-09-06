@@ -34,6 +34,7 @@ header {
     top: 0;
     justify-content: space-between;
     align-items: center;
+    z-index: 1000;
 
     .logo,
     .contacto {
@@ -124,7 +125,25 @@ header {
 section {
     height: 100vh;
     width: 100%;
-    background-color: yellow;
+    // background-color: yellow;
     border: 1px solid black;
     scroll-margin-top: 15vh;
+}
+
+#btn-ir-arriba {
+    display: none;
+    cursor: pointer;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+
+    background: $color-principal;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 5rem;
+    border: none;
+
+    box-shadow: 2px 12px 4px rgba(0, 0, 0, 0.2);
+    transition: 300ms ease;
+    z-index: 1000;
 }
