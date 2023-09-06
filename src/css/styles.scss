@@ -14,6 +14,9 @@ $font-radio: 'Bebas Neue', sans-serif;
 $font-titulos: 'Archivo Black', sans-serif;
 $font-cuerpos: 'Figtree', sans-serif;
 $font-size: 16px;
+
+// Tamaños
+$heigt-navbar: 12vh;
 // #endregion variables
 
 * {
@@ -27,7 +30,7 @@ $font-size: 16px;
 
 // #region navbar
 header {
-    height: 12vh;
+    height: $heigt-navbar;
     background-color: $color-negro;
     display: flex;
     position: sticky;
@@ -124,11 +127,32 @@ header {
 
 section {
     height: 100vh;
-    width: 100%;
-    // background-color: yellow;
     border: 1px solid black;
-    scroll-margin-top: 15vh;
+    scroll-margin-top: $heigt-navbar;
 }
+
+// #region top canciones
+#top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    #top-container {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        grid-template-columns: repeat(2, 1fr);
+        height: 100%;
+        width: 50%;
+        .top-card {
+            background-color: #f4e87c;
+            height: 80%;
+            width: 90%;
+            border: 1px solid black;
+        }
+    }
+}
+// #endregion top canciones
 
 #btn-ir-arriba {
     display: none;

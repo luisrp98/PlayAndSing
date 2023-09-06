@@ -84,9 +84,29 @@ header nav ul a:hover {
 
 section {
   height: 100vh;
-  width: 100%;
   border: 1px solid black;
-  scroll-margin-top: 15vh;
+  scroll-margin-top: 12vh;
+}
+
+#top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+#top #top-container {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  height: 100%;
+  width: 50%;
+}
+#top #top-container .top-card {
+  background-color: #f4e87c;
+  height: 80%;
+  width: 90%;
+  border: 1px solid black;
 }
 
 #btn-ir-arriba {
