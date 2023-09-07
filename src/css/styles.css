@@ -82,6 +82,17 @@ header nav ul a:hover {
   font-family: "Figtree", sans-serif;
 }
 
+#divider-1 {
+  position: absolute;
+  top: 34rem;
+}
+
+#divider-2 {
+  position: absolute;
+  top: 120rem;
+  z-index: -10;
+}
+
 section {
   height: 100vh;
   border: 1px solid black;
@@ -93,6 +104,13 @@ section {
   flex-direction: column;
   align-items: center;
   justify-items: center;
+  background-color: #fd7e14;
+}
+#top h1 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 3rem;
+  color: black;
+  margin: 2rem;
 }
 #top #top-container {
   display: grid;
@@ -103,10 +121,34 @@ section {
   width: 50%;
 }
 #top #top-container .top-card {
-  background-color: #f4e87c;
+  display: flex;
+  background-color: #090504;
   height: 80%;
   width: 90%;
   border: 1px solid black;
+  box-shadow: 10px 10px 5px hsla(0, 0%, 0%, 0.3);
+}
+#top #top-container .top-card img {
+  height: 8.3rem;
+}
+#top #top-container .top-card .text-top-card {
+  margin: 0.2em 0 0 1.5em;
+}
+#top #top-container .top-card .text-top-card h2,
+#top #top-container .top-card .text-top-card p {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 1.2em;
+  color: white;
+}
+#top #top-container .top-card .text-top-card a {
+  font-family: "Roboto", sans-serif;
+  display: inline-block;
+  background-color: green;
+  border-radius: 5%;
+  text-decoration: none;
+  padding: 1em;
+  color: white;
+  margin-top: 1em;
 }
 
 #btn-ir-arriba {

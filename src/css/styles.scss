@@ -122,9 +122,16 @@ header {
         -webkit-backdrop-filter: blur(4.5px);
     }
 }
-
 // #endregion banner
-
+#divider-1 {
+    position: absolute;
+    top: 34rem;
+}
+#divider-2 {
+    position: absolute;
+    top: 120rem;
+    z-index: -10;
+}
 section {
     height: 100vh;
     border: 1px solid black;
@@ -137,6 +144,14 @@ section {
     flex-direction: column;
     align-items: center;
     justify-items: center;
+    background-color: $color-principal;
+
+    h1 {
+        font-family: $font-radio;
+        font-size: 3rem;
+        color: $color-negro;
+        margin: 2rem;
+    }
     #top-container {
         display: grid;
         align-items: center;
@@ -144,11 +159,38 @@ section {
         grid-template-columns: repeat(2, 1fr);
         height: 100%;
         width: 50%;
+
         .top-card {
-            background-color: #f4e87c;
+            display: flex;
+            background-color: #090504;
             height: 80%;
             width: 90%;
             border: 1px solid black;
+            box-shadow: 10px 10px 5px hsla(0, 0%, 0%, 0.3);
+
+            img {
+                height: 8.3rem;
+            }
+
+            .text-top-card {
+                margin: 0.2em 0 0 1.5em;
+                h2,
+                p {
+                    font-family: $font-titulos;
+                    font-size: 1.2em;
+                    color: white;
+                }
+                a {
+                    font-family: $font-estandar;
+                    display: inline-block;
+                    background-color: green;
+                    border-radius: 5%;
+                    text-decoration: none;
+                    padding: 1em;
+                    color: $color-blanco;
+                    margin-top: 1em;
+                }
+            }
         }
     }
 }
