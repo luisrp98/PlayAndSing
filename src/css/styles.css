@@ -90,7 +90,6 @@ header nav ul a:hover {
 #divider-2 {
   position: absolute;
   top: 120rem;
-  z-index: -10;
 }
 
 section {
@@ -125,7 +124,6 @@ section {
   background-color: #090504;
   height: 80%;
   width: 90%;
-  border: 1px solid black;
   box-shadow: 10px 10px 5px hsla(0, 0%, 0%, 0.3);
 }
 #top #top-container .top-card img {
@@ -149,6 +147,31 @@ section {
   padding: 1em;
   color: white;
   margin-top: 1em;
+}
+
+#artista {
+  background-image: url(../img/backgroundtaylor.png);
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+#artista .artista-text {
+  width: 40%;
+  padding-right: 10%;
+}
+#artista .artista-text h1 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 5rem;
+}
+#artista .artista-text p {
+  font-family: "Figtree", sans-serif;
+  font-size: 1.8rem;
+}
+#artista img {
+  position: absolute;
+  top: 121rem;
+  left: -15rem;
+  height: 60rem;
 }
 
 #btn-ir-arriba {

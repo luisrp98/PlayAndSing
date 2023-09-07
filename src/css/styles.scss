@@ -130,7 +130,7 @@ header {
 #divider-2 {
     position: absolute;
     top: 120rem;
-    z-index: -10;
+    // z-index: -10;
 }
 section {
     height: 100vh;
@@ -165,7 +165,6 @@ section {
             background-color: #090504;
             height: 80%;
             width: 90%;
-            border: 1px solid black;
             box-shadow: 10px 10px 5px hsla(0, 0%, 0%, 0.3);
 
             img {
@@ -195,6 +194,34 @@ section {
     }
 }
 // #endregion top canciones
+
+// #region artista
+#artista {
+    // background-color: #ffe3b9;
+    background-image: url(../img/backgroundtaylor.png);
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    .artista-text {
+        width: 40%;
+        padding-right: 10%;
+        h1 {
+            font-family: $font-radio;
+            font-size: 5rem;
+        }
+        p {
+            font-family: $font-cuerpos;
+            font-size: 1.8rem;
+        }
+    }
+    img {
+        position: absolute;
+        top: 121rem;
+        left: -15rem;
+        height: 60rem;
+    }
+}
+// #endregion artista
 
 #btn-ir-arriba {
     display: none;
