@@ -1,255 +1,58 @@
+@media screen and (max-width: 767px) {
+  body {
+    background-color: red;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  body {
+    background-color: blue;
+  }
+}
+@media screen and (min-width: 1200px) {
+  body {
+    font-size: 20px;
+    background-color: cadetblue;
+  }
+  header {
+    height: 15vh;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header a {
+    flex: 10%;
+    display: flex;
+    justify-content: center;
+  }
+  header .logo img {
+    width: 90%;
+  }
+  header .contacto img {
+    width: 50%;
+  }
+  header nav {
+    flex: 80%;
+  }
+  header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  header nav ul li a {
+    text-align: center;
+    text-decoration: none;
+    font-size: 2.5rem;
+    font-family: "Bebas Neue", sans-serif;
+    color: white;
+  }
+  header nav ul li a:hover {
+    color: hsla(21, 100%, 50%, 0.801);
+  }
+}
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-size: 16px;
-  font-family: "Roboto", sans-serif;
   scroll-behavior: smooth;
-}
-
-header {
-  height: 12vh;
-  background-color: black;
-  display: flex;
-  position: sticky;
-  top: 0;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 1000;
-}
-header .logo,
-header .contacto {
-  display: flex;
-  padding: 0 2vw;
-}
-header .logo.logo,
-header .contacto.logo {
-  height: 12vh;
-}
-header .logo.contacto,
-header .contacto.contacto {
-  height: 8vh;
-}
-header nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-}
-header nav ul a {
-  display: flex;
-  text-decoration: none;
-  font-family: "Bebas Neue", sans-serif;
-  font-size: 2rem;
-  color: white;
-  padding: 1.8rem;
-  border-radius: 1rem;
-}
-header nav ul a:hover {
-  background-color: hsla(21, 100%, 50%, 0.801);
-}
-
-#banner {
-  height: 88vh;
-  background-image: url(../img/banner.jpg);
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: end;
-}
-#banner #banner-text {
-  width: 30%;
-  height: 60%;
-  margin-right: 5%;
-  padding: 2.5rem;
-  color: white;
-  text-shadow: 0.125rem 0.125rem 0.3125rem #fd7e14;
-  /* From https://css.glass */
-  background: rgba(0, 0, 0, 0.34);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(4.5px);
-  -webkit-backdrop-filter: blur(4.5px);
-}
-#banner #banner-text h1 {
-  font-size: 3rem;
-  font-family: "Archivo Black", sans-serif;
-  margin-bottom: 3rem;
-}
-#banner #banner-text p {
-  height: auto;
-  font-size: 2rem;
-  font-family: "Figtree", sans-serif;
-}
-
-#divider-1 {
-  position: absolute;
-  top: 34rem;
-}
-
-#divider-2 {
-  position: absolute;
-  top: 120rem;
-}
-
-#divider-3 {
-  position: absolute;
-  top: 155rem;
-}
-
-section {
-  height: 100vh;
-  scroll-margin-top: 12vh;
-}
-
-#top {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-items: center;
-  background-color: #fd7e14;
-}
-#top h1 {
-  font-family: "Bebas Neue", sans-serif;
-  font-size: 3rem;
-  color: black;
-  margin: 2rem;
-}
-#top #top-container {
-  display: grid;
-  align-items: center;
-  justify-items: center;
-  grid-template-columns: repeat(2, 1fr);
-  height: 100%;
-  width: 50%;
-}
-#top #top-container .top-card {
-  display: flex;
-  background-color: #090504;
-  height: 80%;
-  width: 90%;
-  box-shadow: 10px 10px 5px hsla(0, 0%, 0%, 0.3);
-}
-#top #top-container .top-card img {
-  height: 8.3rem;
-}
-#top #top-container .top-card .text-top-card {
-  margin: 0.2em 0 0 1.5em;
-}
-#top #top-container .top-card .text-top-card h2,
-#top #top-container .top-card .text-top-card p {
-  font-family: "Archivo Black", sans-serif;
-  font-size: 1.2em;
-  color: white;
-}
-#top #top-container .top-card .text-top-card a {
-  font-family: "Roboto", sans-serif;
-  display: inline-block;
-  background-color: green;
-  border-radius: 5%;
-  text-decoration: none;
-  padding: 1em;
-  color: white;
-  margin-top: 1em;
-}
-
-#artista {
-  background-image: url(../img/backgroundtaylor.png);
-  display: flex;
-  align-items: center;
-  justify-content: end;
-}
-#artista .artista-text {
-  width: 40%;
-  padding-right: 10%;
-}
-#artista .artista-text h1 {
-  font-family: "Bebas Neue", sans-serif;
-  font-size: 5rem;
-}
-#artista .artista-text p {
-  font-family: "Figtree", sans-serif;
-  font-size: 1.8rem;
-}
-#artista img {
-  position: absolute;
-  top: 121rem;
-  left: -15rem;
-  height: 60rem;
-}
-
-#conciertos-eventos {
-  background-color: black;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-}
-#conciertos-eventos h1 {
-  font-family: "Bebas Neue", sans-serif;
-  color: white;
-  margin: auto;
-  font-size: 3rem;
-  margin-top: 9rem;
-}
-#conciertos-eventos img {
-  position: relative;
-  bottom: 1rem;
-  height: 135%;
-}
-#conciertos-eventos #conciertos-container {
-  position: absolute;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 6rem;
-  top: 200rem;
-  left: 5%;
-  width: 90%;
-  height: 50%;
-}
-#conciertos-eventos #conciertos-container .concierto-card {
-  display: flex;
-  flex-direction: column;
-  font-family: "Bebas Neue", sans-serif;
-  color: white;
-  padding: 3rem;
-  /* From https://css.glass */
-  background: rgba(0, 0, 0, 0.3);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(7px);
-  -webkit-backdrop-filter: blur(7px);
-}
-#conciertos-eventos #conciertos-container .concierto-card h1 {
-  font-size: 6rem;
-  margin: 0;
-}
-#conciertos-eventos #conciertos-container .concierto-card p {
-  font-size: 2rem;
-}
-#conciertos-eventos #conciertos-container .concierto-card a {
-  font-size: 2rem;
-  text-decoration: none;
-  color: white;
-  padding: 0.5rem;
-  background-color: #fd7e14;
-  border-radius: 4%;
-}
-#conciertos-eventos #conciertos-container .concierto-card a:hover {
-  background-color: hsla(21, 100%, 50%, 0.801);
-}
-#conciertos-eventos #btn-ir-arriba {
-  display: none;
-  cursor: pointer;
-  position: fixed;
-  bottom: 1rem;
-  right: 1rem;
-  background: #fd7e14;
-  height: 5rem;
-  width: 5rem;
-  border-radius: 5rem;
-  border: none;
-  box-shadow: 2px 12px 4px rgba(0, 0, 0, 0.2);
-  transition: 300ms ease;
-  z-index: 1000;
 }/*# sourceMappingURL=styles.css.map */
