@@ -1,0 +1,62 @@
+@use '../variables/variables';
+
+@media screen and (min-width: 1200px) {
+    // Variables
+    $font-size: 20px;
+
+    body {
+        font-size: $font-size;
+        background-color: cadetblue;
+    }
+
+    // #region banner
+    header {
+        height: 15vh;
+        background-color: variables.$color-negro;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        a {
+            flex: 10%;
+            display: flex;
+            justify-content: center;
+        }
+        .logo {
+            img {
+                width: 90%;
+            }
+        }
+        .contacto {
+            img {
+                width: 50%;
+            }
+        }
+        // #region navbar
+        nav {
+            flex: 80%;
+
+            ul {
+                list-style: none;
+                display: flex;
+                justify-content: space-evenly;
+
+                li {
+                    a {
+                        text-align: center;
+                        text-decoration: none;
+                        font-size: 2.5rem;
+                        font-family: variables.$font-radio;
+                        color: variables.$color-blanco;
+
+                        &:hover {
+                            color: variables.$color-principal-hover;
+                        }
+                    }
+                }
+            }
+        }
+        // #endregion navbar
+    }
+    // #endregion banner
+}
