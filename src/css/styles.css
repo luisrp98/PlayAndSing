@@ -58,6 +58,7 @@
   #banner #banner-text {
     margin-right: 5%;
     width: 40%;
+    height: 55%;
     text-align: center;
     color: white;
     text-shadow: 0.1875rem 0.1875rem 0.25rem #fd7e14;
@@ -69,12 +70,12 @@
     -webkit-backdrop-filter: blur(4.5px);
   }
   #banner #banner-text h1 {
-    font-size: 3.5rem;
+    font-size: 8vh;
     font-family: "Bebas Neue", sans-serif;
     margin: 5% 2%;
   }
   #banner #banner-text p {
-    font-size: 2.7rem;
+    font-size: 3.5vh;
     font-family: "Figtree", sans-serif;
     margin: 5% 5%;
   }
@@ -145,14 +146,15 @@
   #artista img {
     position: absolute;
     bottom: 0;
-    left: -20rem;
+    left: -20vh;
     height: 100%;
   }
   #artista #artista-text {
+    height: auto;
     width: 40%;
     padding: 2%;
     position: absolute;
-    top: 10%;
+    top: 25%;
     right: 10%;
     /* From https://css.glass */
     background: rgba(254, 230, 123, 0.31);
@@ -164,11 +166,11 @@
   }
   #artista #artista-text h1 {
     font-family: "Bebas Neue", sans-serif;
-    font-size: 4rem;
+    font-size: 4vh;
   }
   #artista #artista-text p {
     font-family: "Figtree", sans-serif;
-    font-size: 2rem;
+    font-size: 3vh;
   }
   #divider-2 {
     position: absolute;
@@ -199,11 +201,12 @@
     display: grid;
     width: 80%;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 50vh;
     gap: 2rem;
   }
   #conciertos-eventos #conciertos-container .concierto-card {
     display: grid;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: 40% 30% 10% 20%;
     align-items: center;
     /* From https://css.glass */
     background: rgba(0, 133, 255, 0.17);
@@ -216,11 +219,15 @@
     text-align: center;
   }
   #conciertos-eventos #conciertos-container .concierto-card h1 {
-    font-size: 5rem;
+    font-size: 4rem;
+    margin: 0;
   }
   #conciertos-eventos #conciertos-container .concierto-card p {
     font-size: 2.5rem;
     font-family: "Archivo Black", sans-serif;
+  }
+  #conciertos-eventos #conciertos-container .concierto-card .concierto-direccion {
+    font-size: 1rem;
   }
   #conciertos-eventos #conciertos-container .concierto-card a {
     font-size: 2rem;
