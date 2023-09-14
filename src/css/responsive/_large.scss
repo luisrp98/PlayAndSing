@@ -62,7 +62,6 @@
 
     section {
         height: 85vh;
-        background-color: beige;
         border: 1px solid black;
     }
     // #region banner
@@ -108,4 +107,66 @@
         position: absolute;
         bottom: 0;
     }
+
+    // #region top
+    #top {
+        height: auto;
+        margin: 0 2%;
+
+        h1 {
+            font-family: variables.$font-radio;
+            font-size: 3rem;
+            color: variables.$color-negro;
+            text-align: center;
+            margin: 2rem;
+        }
+
+        #top-container {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-gap: 2rem;
+            grid-auto-rows: minmax(100px, auto);
+
+            .top-card {
+                background-color: variables.$color-negro;
+                border-radius: 5%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                img {
+                    border-radius: 2.5%;
+                    margin: 5% 0;
+                    width: 80%;
+                }
+                .text-top-card {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    h2,
+                    p,
+                    a {
+                        font-family: variables.$font-radio;
+                        color: variables.$color-blanco;
+                        text-align: center;
+                        align-items: center;
+                    }
+                    h2 {
+                        font-size: 3rem;
+                    }
+                    p {
+                        font-size: 2.5rem;
+                    }
+                    a {
+                        font-size: 2rem;
+                        text-decoration: none;
+                        border-radius: 5%;
+                        padding: 1rem;
+                        background-color: variables.$color-verde;
+                        margin-bottom: 5%;
+                    }
+                }
+            }
+        }
+    }
+    // #endregion top
 }

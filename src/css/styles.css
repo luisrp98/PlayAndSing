@@ -51,7 +51,6 @@
   }
   section {
     height: 85vh;
-    background-color: beige;
     border: 1px solid black;
   }
   #banner {
@@ -88,6 +87,62 @@
   #divider-1 {
     position: absolute;
     bottom: 0;
+  }
+  #top {
+    height: auto;
+    margin: 0 2%;
+  }
+  #top h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 3rem;
+    color: black;
+    text-align: center;
+    margin: 2rem;
+  }
+  #top #top-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 2rem;
+    grid-auto-rows: minmax(100px, auto);
+  }
+  #top #top-container .top-card {
+    background-color: black;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #top #top-container .top-card img {
+    border-radius: 2.5%;
+    margin: 5% 0;
+    width: 80%;
+  }
+  #top #top-container .top-card .text-top-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #top #top-container .top-card .text-top-card h2,
+  #top #top-container .top-card .text-top-card p,
+  #top #top-container .top-card .text-top-card a {
+    font-family: "Bebas Neue", sans-serif;
+    color: white;
+    text-align: center;
+    align-items: center;
+  }
+  #top #top-container .top-card .text-top-card h2 {
+    font-size: 3rem;
+  }
+  #top #top-container .top-card .text-top-card p {
+    font-size: 2.5rem;
+  }
+  #top #top-container .top-card .text-top-card a {
+    font-size: 2rem;
+    text-decoration: none;
+    border-radius: 5%;
+    padding: 1rem;
+    background-color: #1db954;
+    margin-bottom: 5%;
   }
 }
 * {
