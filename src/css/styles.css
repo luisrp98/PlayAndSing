@@ -1,9 +1,13 @@
+@charset "UTF-8";
 @media screen and (min-width: 1200px) {
   body {
     font-size: 20px;
     background-color: #fd7e14;
   }
   header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
     height: 15vh;
     background-color: black;
     display: flex;
@@ -41,7 +45,7 @@
   }
   section {
     height: 85vh;
-    border: 1px solid black;
+    scroll-margin-top: 20vh;
   }
   #banner {
     background-image: url(../img/banner.jpg);
@@ -225,6 +229,21 @@
   }
   #conciertos-eventos #conciertos-container .concierto-card a:hover {
     color: #1db954;
+  }
+  #btn-ir-arriba {
+    position: fixed;
+    bottom: 20px; /* Ajusta la distancia desde la parte inferior según tus necesidades */
+    right: 20px; /* Ajusta la distancia desde la derecha según tus necesidades */
+    z-index: 1000; /* Ajusta la posición en el eje z */
+    background-color: #007bff; /* Color de fondo */
+    border: none;
+    border-radius: 50%; /* Para que el botón tenga forma circular */
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+  }
+  #btn-ir-arriba:hover {
+    background-color: #00346b;
   }
 }
 * {
