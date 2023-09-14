@@ -4,6 +4,15 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <!-- #region fuentes -->
+        <head>
+            <!-- ... Otros elementos del head ... -->
+            <link
+                rel="stylesheet"
+                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+                integrity="sha512-..."
+                crossorigin="anonymous"
+            />
+        </head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -34,7 +43,9 @@
                     <li><a href="#conciertos-eventos">Proximos eventos</a></li>
                 </ul>
             </nav>
-            <a class="contacto"><img src="src/img/contacto.png" alt="" /> </a>
+            <a class="contacto" href="#form"
+                ><img src="src/img/contacto.png" alt="" />
+            </a>
         </header>
 
         <main>
@@ -267,7 +278,42 @@
                 </div>
             </section>
         </main>
-        <!-- <footer></footer> -->
+        <footer id="form">
+            <div class="contacto-footer">
+                <h2>Contacto</h2>
+                <form id="contact-form" action="#">
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="correo">Correo Electrónico:</label>
+                        <input type="email" id="correo" name="correo" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="comentario">Comentario:</label>
+                        <textarea id="comentario" name="comentario" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Enviar</button>
+                    </div>
+                </form>
+            </div>
+            <div class="info">
+                <div class="redes-sociales">
+                    <a href="https://facebook.com/tupagina" target="_blank">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://twitter.com/tupagina" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://instagram.com/tupagina" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+                <div class="marca-registrada">Play&Sing® Marca Registrada</div>
+            </div>
+        </footer>
         <button id="btn-ir-arriba">
             <svg viewBox="0 0 24 24">
                 <path d="m6 15 6-8 6 8"></path>

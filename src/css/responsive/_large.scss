@@ -294,4 +294,64 @@
             background-color: #00346b;
         }
     }
+
+    footer {
+        width: 100%;
+        font-family: variables.$font-radio;
+        background-color: variables.$color-principal-hover;
+        display: flex;
+
+        .contacto-footer {
+            margin: 0 10%;
+            width: 50%;
+            h2 {
+                text-align: center;
+                font-size: 3rem;
+            }
+            form {
+                .form-group {
+                    margin: 2rem 0;
+                    label {
+                        font-size: 2rem;
+                    }
+                    input {
+                        width: 50%;
+                        height: 2rem;
+                    }
+                    textarea {
+                        width: 50%;
+                        height: 10rem;
+                    }
+                    button {
+                        display: inline-block;
+                        padding: 1rem 1rem;
+                        width: 50%;
+                        background-color: variables.$color-blanco;
+                        border: none;
+                        border-radius: 5px;
+                        cursor: pointer;
+                        text-decoration: none;
+                        font-family: variables.$font-titulos;
+                    }
+                }
+            }
+        }
+        .info {
+            margin: auto;
+            .redes-sociales {
+                display: flex;
+                justify-content: space-around;
+                a {
+                    i {
+                        color: variables.$color-negro;
+                        font-size: 3rem;
+                    }
+                }
+            }
+            .marca-registrada {
+                margin-top: 2rem;
+                font-size: 2rem;
+            }
+        }
+    }
 }

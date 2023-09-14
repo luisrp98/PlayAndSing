@@ -245,6 +245,60 @@
   #btn-ir-arriba:hover {
     background-color: #00346b;
   }
+  footer {
+    width: 100%;
+    font-family: "Bebas Neue", sans-serif;
+    background-color: hsla(21, 100%, 50%, 0.801);
+    display: flex;
+  }
+  footer .contacto-footer {
+    margin: 0 10%;
+    width: 50%;
+  }
+  footer .contacto-footer h2 {
+    text-align: center;
+    font-size: 3rem;
+  }
+  footer .contacto-footer form .form-group {
+    margin: 2rem 0;
+  }
+  footer .contacto-footer form .form-group label {
+    font-size: 2rem;
+  }
+  footer .contacto-footer form .form-group input {
+    width: 50%;
+    height: 2rem;
+  }
+  footer .contacto-footer form .form-group textarea {
+    width: 50%;
+    height: 10rem;
+  }
+  footer .contacto-footer form .form-group button {
+    display: inline-block;
+    padding: 1rem 1rem;
+    width: 50%;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: "Archivo Black", sans-serif;
+  }
+  footer .info {
+    margin: auto;
+  }
+  footer .info .redes-sociales {
+    display: flex;
+    justify-content: space-around;
+  }
+  footer .info .redes-sociales a i {
+    color: black;
+    font-size: 3rem;
+  }
+  footer .info .marca-registrada {
+    margin-top: 2rem;
+    font-size: 2rem;
+  }
 }
 * {
   padding: 0;
