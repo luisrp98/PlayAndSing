@@ -1,13 +1,3 @@
-@media screen and (max-width: 767px) {
-  body {
-    background-color: red;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  body {
-    background-color: blue;
-  }
-}
 @media screen and (min-width: 1200px) {
   body {
     font-size: 20px;
@@ -144,10 +134,6 @@
     background-color: #1db954;
     margin-bottom: 5%;
   }
-  #divider-2 {
-    position: absolute;
-    top: 0;
-  }
   #artista {
     background-image: url(../img/backgroundtaylor.png);
     position: relative;
@@ -179,6 +165,66 @@
   #artista #artista-text p {
     font-family: "Figtree", sans-serif;
     font-size: 2rem;
+  }
+  #divider-2 {
+    position: absolute;
+    top: 0;
+  }
+  #divider-3 {
+    position: absolute;
+    bottom: 0;
+  }
+  #conciertos-eventos {
+    position: relative;
+    background-color: black;
+    background-image: url("../../../src/img/concierto.png");
+    background-repeat: no-repeat;
+    background-size: 80% 100%;
+    background-position-x: center;
+    background-position-y: bottom;
+  }
+  #conciertos-eventos h1 {
+    font-family: "Bebas Neue", sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 5%;
+  }
+  #conciertos-eventos #conciertos-container {
+    margin: auto;
+    display: grid;
+    width: 80%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  #conciertos-eventos #conciertos-container .concierto-card {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    align-items: center;
+    /* From https://css.glass */
+    background: rgba(0, 133, 255, 0.17);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.9px);
+    -webkit-backdrop-filter: blur(4.9px);
+    font-family: "Bebas Neue", sans-serif;
+    color: white;
+    text-align: center;
+  }
+  #conciertos-eventos #conciertos-container .concierto-card h1 {
+    font-size: 5rem;
+  }
+  #conciertos-eventos #conciertos-container .concierto-card p {
+    font-size: 2.5rem;
+    font-family: "Archivo Black", sans-serif;
+  }
+  #conciertos-eventos #conciertos-container .concierto-card a {
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+  }
+  #conciertos-eventos #conciertos-container .concierto-card a:hover {
+    color: #1db954;
   }
 }
 * {
