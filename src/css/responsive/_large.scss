@@ -9,7 +9,7 @@
         background-color: cadetblue;
     }
 
-    // #region banner
+    // #region header
     header {
         height: 15vh;
         background-color: variables.$color-negro;
@@ -58,5 +58,54 @@
         }
         // #endregion navbar
     }
+    // #endregion header
+
+    section {
+        height: 85vh;
+        background-color: beige;
+        border: 1px solid black;
+    }
+    // #region banner
+    #banner {
+        background-image: url(../img/banner.jpg);
+        background-size: cover;
+        background-position: center;
+
+        display: flex;
+        align-items: center;
+        justify-content: end;
+
+        #banner-text {
+            margin-right: 5%;
+            width: 40%;
+            // height: 55%;
+            text-align: center;
+            color: white;
+            text-shadow: 0.1875rem 0.1875rem 0.25rem variables.$color-principal;
+
+            /* From https://css.glass */
+            background: rgba(0, 0, 0, 0.34);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(4.5px);
+            -webkit-backdrop-filter: blur(4.5px);
+
+            h1 {
+                font-size: 3.5rem;
+                font-family: variables.$font-radio;
+                margin: 5% 2%;
+            }
+            p {
+                font-size: 2.7rem;
+                font-family: variables.$font-cuerpos;
+                margin: 5% 5%;
+            }
+        }
+    }
     // #endregion banner
+
+    #divider-1 {
+        position: absolute;
+        bottom: 0;
+    }
 }

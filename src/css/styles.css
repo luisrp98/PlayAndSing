@@ -49,6 +49,46 @@
   header nav ul li a:hover {
     color: hsla(21, 100%, 50%, 0.801);
   }
+  section {
+    height: 85vh;
+    background-color: beige;
+    border: 1px solid black;
+  }
+  #banner {
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+  #banner #banner-text {
+    margin-right: 5%;
+    width: 40%;
+    text-align: center;
+    color: white;
+    text-shadow: 0.1875rem 0.1875rem 0.25rem #fd7e14;
+    /* From https://css.glass */
+    background: rgba(0, 0, 0, 0.34);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.5px);
+    -webkit-backdrop-filter: blur(4.5px);
+  }
+  #banner #banner-text h1 {
+    font-size: 3.5rem;
+    font-family: "Bebas Neue", sans-serif;
+    margin: 5% 2%;
+  }
+  #banner #banner-text p {
+    font-size: 2.7rem;
+    font-family: "Figtree", sans-serif;
+    margin: 5% 5%;
+  }
+  #divider-1 {
+    position: absolute;
+    bottom: 0;
+  }
 }
 * {
   padding: 0;
