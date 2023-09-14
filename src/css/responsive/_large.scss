@@ -6,7 +6,7 @@
 
     body {
         font-size: $font-size;
-        background-color: cadetblue;
+        background-color: variables.$color-principal;
     }
 
     // #region header
@@ -169,4 +169,45 @@
         }
     }
     // #endregion top
+
+    #divider-2 {
+        position: absolute;
+        top: 0;
+    }
+    // #region artista
+    #artista {
+        background-image: url(../img/backgroundtaylor.png);
+        position: relative;
+
+        img {
+            position: absolute;
+            bottom: 0;
+            left: -20rem;
+            height: 100%;
+        }
+        #artista-text {
+            width: 40%;
+            padding: 2%;
+            position: absolute;
+            top: 10%;
+            right: 10%;
+
+            /* From https://css.glass */
+            background: rgba(254, 230, 123, 0.31);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(6.1px);
+            -webkit-backdrop-filter: blur(6.1px);
+            border: 1px solid rgba(254, 230, 123, 0.3);
+            h1 {
+                font-family: variables.$font-radio;
+                font-size: 4rem;
+            }
+            p {
+                font-family: variables.$font-cuerpos;
+                font-size: 2rem;
+            }
+        }
+    }
+    // #endregion artista
 }

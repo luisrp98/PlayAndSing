@@ -11,7 +11,7 @@
 @media screen and (min-width: 1200px) {
   body {
     font-size: 20px;
-    background-color: cadetblue;
+    background-color: #fd7e14;
   }
   header {
     height: 15vh;
@@ -143,6 +143,42 @@
     padding: 1rem;
     background-color: #1db954;
     margin-bottom: 5%;
+  }
+  #divider-2 {
+    position: absolute;
+    top: 0;
+  }
+  #artista {
+    background-image: url(../img/backgroundtaylor.png);
+    position: relative;
+  }
+  #artista img {
+    position: absolute;
+    bottom: 0;
+    left: -20rem;
+    height: 100%;
+  }
+  #artista #artista-text {
+    width: 40%;
+    padding: 2%;
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    /* From https://css.glass */
+    background: rgba(254, 230, 123, 0.31);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.1px);
+    -webkit-backdrop-filter: blur(6.1px);
+    border: 1px solid rgba(254, 230, 123, 0.3);
+  }
+  #artista #artista-text h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 4rem;
+  }
+  #artista #artista-text p {
+    font-family: "Figtree", sans-serif;
+    font-size: 2rem;
   }
 }
 * {
