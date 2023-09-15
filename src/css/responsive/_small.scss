@@ -1,0 +1,366 @@
+@use '../variables/variables';
+
+@media screen and (max-width: 767px) {
+    // Variables
+    $font-size: 6px;
+
+    body {
+        font-size: $font-size;
+        background-color: variables.$color-principal;
+    }
+
+    // #region header
+    header {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        height: 15vh;
+        background-color: variables.$color-negro;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        a {
+            flex: 10%;
+            display: flex;
+            justify-content: center;
+        }
+        .logo {
+            margin: 2%;
+
+            img {
+                width: 90%;
+            }
+        }
+        .contacto {
+            img {
+                width: 30%;
+            }
+        }
+        // #region navbar
+        nav {
+            flex: 45%;
+
+            ul {
+                list-style: none;
+                display: flex;
+                justify-content: space-evenly;
+
+                li {
+                    a {
+                        text-align: center;
+                        text-decoration: none;
+                        font-size: 1rem;
+                        font-family: variables.$font-radio;
+                        color: variables.$color-blanco;
+
+                        &:hover {
+                            color: variables.$color-principal-hover;
+                        }
+                    }
+                }
+            }
+        }
+        // #endregion navbar
+    }
+    // #endregion header
+
+    section {
+        height: 85vh;
+        scroll-margin-top: 15vh;
+    }
+    // #region banner
+    #banner {
+        background-image: url(../img/banner.jpg);
+        background-size: cover;
+        background-position: center;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        #banner-text {
+            // margin-right: 5%;
+            width: 60%;
+            height: auto;
+            text-align: center;
+            color: white;
+            text-shadow: 0.1875rem 0.1875rem 0.25rem variables.$color-principal;
+
+            /* From https://css.glass */
+            background: rgba(0, 0, 0, 0.34);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(4.5px);
+            -webkit-backdrop-filter: blur(4.5px);
+
+            h1 {
+                font-size: 6vh;
+                font-family: variables.$font-radio;
+                margin: 5% 2%;
+            }
+            p {
+                font-size: 3vh;
+                font-family: variables.$font-cuerpos;
+                margin: 5% 5%;
+            }
+        }
+    }
+    // #endregion banner
+
+    #divider-1 {
+        position: absolute;
+        bottom: 0;
+    }
+
+    // #region top
+    #top {
+        height: auto;
+        margin: 0 2%;
+
+        h1 {
+            font-family: variables.$font-radio;
+            font-size: 2.5rem;
+            color: variables.$color-negro;
+            text-align: center;
+            margin: 2rem;
+        }
+
+        #top-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 2rem;
+            grid-auto-rows: minmax(100px, auto);
+
+            .top-card {
+                background-color: variables.$color-negro;
+                border-radius: 5%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                img {
+                    border-radius: 2.5%;
+                    margin: 5% 0;
+                    width: 80%;
+                }
+                .text-top-card {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    h2,
+                    p,
+                    a {
+                        font-family: variables.$font-radio;
+                        color: variables.$color-blanco;
+                        text-align: center;
+                        align-items: center;
+                    }
+                    h2 {
+                        font-size: 3rem;
+                    }
+                    p {
+                        font-size: 2.5rem;
+                    }
+                    a {
+                        font-size: 2rem;
+                        text-decoration: none;
+                        border-radius: 5%;
+                        padding: 1rem;
+                        background-color: variables.$color-verde;
+                        margin-bottom: 5%;
+                    }
+                }
+            }
+        }
+    }
+    // #endregion top
+
+    // #region artista
+    #artista {
+        background-image: url(../img/backgroundtaylor.png);
+        position: relative;
+
+        img {
+            position: absolute;
+            bottom: 0;
+            left: -30vh;
+            height: 100%;
+        }
+        #artista-text {
+            height: auto;
+            width: 40%;
+            padding: 2%;
+            position: absolute;
+            top: 25%;
+            right: 10%;
+
+            /* From https://css.glass */
+            background: rgba(254, 230, 123, 0.31);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(6.1px);
+            -webkit-backdrop-filter: blur(6.1px);
+            border: 1px solid rgba(254, 230, 123, 0.3);
+            h1 {
+                font-family: variables.$font-radio;
+                font-size: 3vh;
+            }
+            p {
+                font-family: variables.$font-cuerpos;
+                font-size: 2vh;
+            }
+        }
+    }
+    // #endregion artista
+    #divider-2 {
+        position: absolute;
+        top: 0;
+    }
+    #divider-3 {
+        position: absolute;
+        bottom: 0;
+    }
+    // #region eventos
+    #conciertos-eventos {
+        position: relative;
+        background-color: variables.$color-negro;
+        background-image: url('../../../src/img/concierto.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position-x: center;
+        background-position-y: bottom;
+
+        h1 {
+            font-family: variables.$font-radio;
+            color: variables.$color-blanco;
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 5%;
+        }
+        #conciertos-container {
+            margin: auto;
+            display: grid;
+            width: 80%;
+            // margin: 20% auto 0 auto;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 50vh;
+
+            gap: 2rem;
+
+            .concierto-card {
+                display: grid;
+                grid-template-rows: 40% 30% 10% 20%;
+                align-items: center;
+
+                /* From https://css.glass */
+                background: rgba(0, 133, 255, 0.17);
+                border-radius: 16px;
+                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                backdrop-filter: blur(4.9px);
+                -webkit-backdrop-filter: blur(4.9px);
+
+                font-family: variables.$font-radio;
+                color: variables.$color-blanco;
+                text-align: center;
+
+                h1 {
+                    font-size: 2rem;
+                    margin: 0;
+                }
+                p {
+                    font-size: 1.3rem;
+                    font-family: variables.$font-titulos;
+                }
+                .concierto-direccion {
+                    font-size: 0.8rem;
+                }
+                a {
+                    font-size: 1rem;
+                    color: variables.$color-blanco;
+                    text-decoration: none;
+                    &:hover {
+                        color: variables.$color-verde;
+                    }
+                }
+            }
+        }
+    }
+    // #endregion eventos
+
+    #btn-ir-arriba {
+        position: fixed;
+        bottom: 20px; /* Ajusta la distancia desde la parte inferior según tus necesidades */
+        right: 20px; /* Ajusta la distancia desde la derecha según tus necesidades */
+        z-index: 1000; /* Ajusta la posición en el eje z */
+        background-color: #007bff; /* Color de fondo */
+        border: none;
+        border-radius: 50%; /* Para que el botón tenga forma circular */
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #00346b;
+        }
+    }
+
+    footer {
+        width: 100%;
+        font-family: variables.$font-radio;
+        background-color: variables.$color-principal-hover;
+        display: flex;
+
+        .contacto-footer {
+            margin: 0 10%;
+            width: 50%;
+            h2 {
+                text-align: center;
+                font-size: 3rem;
+            }
+            form {
+                .form-group {
+                    margin: 2rem 0;
+                    label {
+                        font-size: 2rem;
+                    }
+                    input {
+                        width: 50%;
+                        height: 2rem;
+                    }
+                    textarea {
+                        width: 50%;
+                        height: 10rem;
+                    }
+                    button {
+                        display: inline-block;
+                        padding: 1rem 1rem;
+                        width: 50%;
+                        background-color: variables.$color-blanco;
+                        border: none;
+                        border-radius: 5px;
+                        cursor: pointer;
+                        text-decoration: none;
+                        font-family: variables.$font-titulos;
+                    }
+                }
+            }
+        }
+        .info {
+            margin: auto;
+            .redes-sociales {
+                display: flex;
+                justify-content: space-around;
+                a {
+                    i {
+                        color: variables.$color-negro;
+                        font-size: 3rem;
+                    }
+                }
+            }
+            .marca-registrada {
+                margin-top: 2rem;
+                font-size: 2rem;
+            }
+        }
+    }
+}

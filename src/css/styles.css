@@ -1,4 +1,314 @@
 @charset "UTF-8";
+@media screen and (max-width: 767px) {
+  body {
+    font-size: 6px;
+    background-color: #fd7e14;
+  }
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    height: 15vh;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header a {
+    flex: 10%;
+    display: flex;
+    justify-content: center;
+  }
+  header .logo {
+    margin: 2%;
+  }
+  header .logo img {
+    width: 90%;
+  }
+  header .contacto img {
+    width: 30%;
+  }
+  header nav {
+    flex: 45%;
+  }
+  header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  header nav ul li a {
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: "Bebas Neue", sans-serif;
+    color: white;
+  }
+  header nav ul li a:hover {
+    color: hsla(21, 100%, 50%, 0.801);
+  }
+  section {
+    height: 85vh;
+    scroll-margin-top: 15vh;
+  }
+  #banner {
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #banner #banner-text {
+    width: 60%;
+    height: auto;
+    text-align: center;
+    color: white;
+    text-shadow: 0.1875rem 0.1875rem 0.25rem #fd7e14;
+    /* From https://css.glass */
+    background: rgba(0, 0, 0, 0.34);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.5px);
+    -webkit-backdrop-filter: blur(4.5px);
+  }
+  #banner #banner-text h1 {
+    font-size: 6vh;
+    font-family: "Bebas Neue", sans-serif;
+    margin: 5% 2%;
+  }
+  #banner #banner-text p {
+    font-size: 3vh;
+    font-family: "Figtree", sans-serif;
+    margin: 5% 5%;
+  }
+  #divider-1 {
+    position: absolute;
+    bottom: 0;
+  }
+  #top {
+    height: auto;
+    margin: 0 2%;
+  }
+  #top h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 2.5rem;
+    color: black;
+    text-align: center;
+    margin: 2rem;
+  }
+  #top #top-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    grid-auto-rows: minmax(100px, auto);
+  }
+  #top #top-container .top-card {
+    background-color: black;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #top #top-container .top-card img {
+    border-radius: 2.5%;
+    margin: 5% 0;
+    width: 80%;
+  }
+  #top #top-container .top-card .text-top-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #top #top-container .top-card .text-top-card h2,
+  #top #top-container .top-card .text-top-card p,
+  #top #top-container .top-card .text-top-card a {
+    font-family: "Bebas Neue", sans-serif;
+    color: white;
+    text-align: center;
+    align-items: center;
+  }
+  #top #top-container .top-card .text-top-card h2 {
+    font-size: 3rem;
+  }
+  #top #top-container .top-card .text-top-card p {
+    font-size: 2.5rem;
+  }
+  #top #top-container .top-card .text-top-card a {
+    font-size: 2rem;
+    text-decoration: none;
+    border-radius: 5%;
+    padding: 1rem;
+    background-color: #1db954;
+    margin-bottom: 5%;
+  }
+  #artista {
+    background-image: url(../img/backgroundtaylor.png);
+    position: relative;
+  }
+  #artista img {
+    position: absolute;
+    bottom: 0;
+    left: -30vh;
+    height: 100%;
+  }
+  #artista #artista-text {
+    height: auto;
+    width: 40%;
+    padding: 2%;
+    position: absolute;
+    top: 25%;
+    right: 10%;
+    /* From https://css.glass */
+    background: rgba(254, 230, 123, 0.31);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.1px);
+    -webkit-backdrop-filter: blur(6.1px);
+    border: 1px solid rgba(254, 230, 123, 0.3);
+  }
+  #artista #artista-text h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 3vh;
+  }
+  #artista #artista-text p {
+    font-family: "Figtree", sans-serif;
+    font-size: 2vh;
+  }
+  #divider-2 {
+    position: absolute;
+    top: 0;
+  }
+  #divider-3 {
+    position: absolute;
+    bottom: 0;
+  }
+  #conciertos-eventos {
+    position: relative;
+    background-color: black;
+    background-image: url("../../../src/img/concierto.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position-x: center;
+    background-position-y: bottom;
+  }
+  #conciertos-eventos h1 {
+    font-family: "Bebas Neue", sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 5%;
+  }
+  #conciertos-eventos #conciertos-container {
+    margin: auto;
+    display: grid;
+    width: 80%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 50vh;
+    gap: 2rem;
+  }
+  #conciertos-eventos #conciertos-container .concierto-card {
+    display: grid;
+    grid-template-rows: 40% 30% 10% 20%;
+    align-items: center;
+    /* From https://css.glass */
+    background: rgba(0, 133, 255, 0.17);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.9px);
+    -webkit-backdrop-filter: blur(4.9px);
+    font-family: "Bebas Neue", sans-serif;
+    color: white;
+    text-align: center;
+  }
+  #conciertos-eventos #conciertos-container .concierto-card h1 {
+    font-size: 2rem;
+    margin: 0;
+  }
+  #conciertos-eventos #conciertos-container .concierto-card p {
+    font-size: 1.3rem;
+    font-family: "Archivo Black", sans-serif;
+  }
+  #conciertos-eventos #conciertos-container .concierto-card .concierto-direccion {
+    font-size: 0.8rem;
+  }
+  #conciertos-eventos #conciertos-container .concierto-card a {
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+  }
+  #conciertos-eventos #conciertos-container .concierto-card a:hover {
+    color: #1db954;
+  }
+  #btn-ir-arriba {
+    position: fixed;
+    bottom: 20px; /* Ajusta la distancia desde la parte inferior según tus necesidades */
+    right: 20px; /* Ajusta la distancia desde la derecha según tus necesidades */
+    z-index: 1000; /* Ajusta la posición en el eje z */
+    background-color: #007bff; /* Color de fondo */
+    border: none;
+    border-radius: 50%; /* Para que el botón tenga forma circular */
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+  }
+  #btn-ir-arriba:hover {
+    background-color: #00346b;
+  }
+  footer {
+    width: 100%;
+    font-family: "Bebas Neue", sans-serif;
+    background-color: hsla(21, 100%, 50%, 0.801);
+    display: flex;
+  }
+  footer .contacto-footer {
+    margin: 0 10%;
+    width: 50%;
+  }
+  footer .contacto-footer h2 {
+    text-align: center;
+    font-size: 3rem;
+  }
+  footer .contacto-footer form .form-group {
+    margin: 2rem 0;
+  }
+  footer .contacto-footer form .form-group label {
+    font-size: 2rem;
+  }
+  footer .contacto-footer form .form-group input {
+    width: 50%;
+    height: 2rem;
+  }
+  footer .contacto-footer form .form-group textarea {
+    width: 50%;
+    height: 10rem;
+  }
+  footer .contacto-footer form .form-group button {
+    display: inline-block;
+    padding: 1rem 1rem;
+    width: 50%;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: "Archivo Black", sans-serif;
+  }
+  footer .info {
+    margin: auto;
+  }
+  footer .info .redes-sociales {
+    display: flex;
+    justify-content: space-around;
+  }
+  footer .info .redes-sociales a i {
+    color: black;
+    font-size: 3rem;
+  }
+  footer .info .marca-registrada {
+    margin-top: 2rem;
+    font-size: 2rem;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   body {
     font-size: 10px;
